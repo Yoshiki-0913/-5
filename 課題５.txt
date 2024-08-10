@@ -1,0 +1,34 @@
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge>  mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/08/10     20:33                git_challenge
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge> cd git_challenge
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git init
+Initialized empty Git repository in C:/Users/よしき/OneDrive/デスクトップ/課題/git_challenge/git_challenge/.git/
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> echo "Hello World" > HelloWorld.txt
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git add HelloWorld.txt
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git commit -m "Hello!World.txtを追加"
+[main (root-commit) f6e76d4] Hello!World.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 HelloWorld.txt
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> echo "こんにちは世界" >> HelloWorld.txt
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git add HelloWorld.txt
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git commit -m "HelloWorld.txtに日本語を追記"
+[main 2b8b50a] HelloWorld.txtに日本語を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+PS C:\Users\よしき\OneDrive\デスクトップ\課題\git_challenge\git_challenge> git log --graph --oneline --decorate --all
+* 2b8b50a (HEAD -> main) HelloWorld.txtに日本語を追記
+* f6e76d4 Hello!World.txtを追加
